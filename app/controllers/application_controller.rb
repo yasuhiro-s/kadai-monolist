@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
       redirect_to login_url
     end
   end
-  
+
   def read(result)
     code = result['itemCode']
     name = result['itemName']
@@ -24,5 +24,4 @@ class ApplicationController < ActionController::Base
       image_url: image_url,
     }
   end
-
 end
